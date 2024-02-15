@@ -12,7 +12,7 @@
         window.history.pushState({},"",targetHref)
   
 
-        fetchUrl()
+        handlingUrlChange()
                 
     }
 
@@ -32,7 +32,7 @@
     //============================
     // HANDLING URL CHANGE
     //============================
-    const fetchUrl=async ()=>{
+    const handlingUrlChange=async ()=>{
              //get pathname
              let pathUrl = window.location.pathname
              console.log(pathUrl);
@@ -46,5 +46,5 @@
 
     }
 
-fetchUrl()
+handlingUrlChange()
 window.route=route
