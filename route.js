@@ -11,10 +11,11 @@
         const targetHref= e.target.href
         window.history.pushState({},"",targetHref)
   
-
+        //handling URL
         handlingUrlChange()
-                
     }
+
+
 
     //============================
     // ROUTING URL
@@ -25,8 +26,6 @@
         "/404":"page/404.html",
     }
 
-
-// console.log(window.location.pathname);
 
 
     //============================
@@ -45,6 +44,8 @@
 
 
     }
+
+    
 
 handlingUrlChange()
 window.route=route

@@ -1,34 +1,84 @@
-body{background-color: aliceblue;}
+body{
+    height: 900px;
+    /* font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.logo{
+    margin:10px;
+    font-style: italic;
+    color:rgb(235, 120, 13);
+    border:1px dotted rgb(240, 57, 57);
+    padding:10px;
+    width: fit-content;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 .main-container{
-border:3px solid black;
-display: flex;
+    border:2px solid rgb(146, 144, 144);
+    display: flex;
+    height: 100%
 }
 
+
 .sidebar{
-/* background-color: aquamarine; */
-padding:20px;
-height: 1100px;
+    /* background-color: aquamarine; */
+    flex: 1;
+    padding:20px;
+    height: 100%;
+    overflow: scroll;
+    box-sizing: border-box;
 }
+
 
 .content{
     border:1px solid blue;
-background-color: bisque;
-width: 100%;
-padding:20px;
-
+    flex: 3;
+    /* background-color: bisque; */
+    width: 100%;
+    overflow: scroll;
+    padding:20px;
 }
+
 
 .sidebar a{
     /* border: 1px solid black; */
-    padding:10px;
     display: block;
-    font-size: 30px;
+    font-size: 20px;
+    color:blue;
+    margin-left:8px;
+    margin-top:5px;
 }
+
 
 h2{
     /* border: 1px solid black; */
     padding:10px;
     text-decoration: underline;
     font-size: 38px;
+    margin:0
+}
+
+
+.form-contact{
+    /* border: 1px solid rgb(148, 146, 146); */
+    border-radius: 5px;
+    padding:20px;
+    width: 300px;
+}
+
+
+textarea{
+    height: 100px;
+}
+
+
+input, textarea{
+    width: 100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid rgb(117, 108, 101)
 }
